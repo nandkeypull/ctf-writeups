@@ -118,7 +118,6 @@ else:
         #docker exec 7eb726aaf76d bash -c 'echo hh0c/IAdooq5rk | ./surprise_bin77'
         os.system("docker exec " + ARM64_DOCKER_ID + " bash -c 'echo " + flag_str + " | ./" + binname + "'")
         os.system("docker cp " + ARM64_DOCKER_ID + ":/surprise .")
-
         extract_and_rename_bin()
     elif ARM:
         os.system("docker cp " + binname + " " + ARM32_DOCKER_ID + ":/")
